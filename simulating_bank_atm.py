@@ -1,5 +1,3 @@
-#NESTED LOOPS
-#NESTED WHILE LOOPS
 #SIMULATING A BANK ATM
 print('WELCOME TO ATM')
 restart =('y')
@@ -8,7 +6,7 @@ balance = 67.14
 while chances >= 0:
     pin = int(input('Enter the 4 digit pin\t'))
     if pin == (3333):
-        print('You Entered the pin correctly\n')
+        print('You Entered the pin correctly\n')bank
         while restart not in ['n','NO','no','N']:
             print('Press 1 for Checking Balance\t')
             print('Press 2 for Making Withdrawl\t')
@@ -30,7 +28,7 @@ while chances >= 0:
                     if restart in ['n','NO','no','N']:
                         print('Thank You')
                         break
-                elif current_amount != [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]:
+                elif current_amount < 10 and current_amount > 100000:
                     print('INVALID')
                     restart = ('y')
             elif option == 3:
